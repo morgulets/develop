@@ -1,0 +1,22 @@
+//main:..//css/style.less
+.brands {
+  min-height: 200px;
+  padding: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media @large {
+    justify-content: space-between;
+  }
+  @media @medium {
+    justify-content: center;
+    padding: 30px 0px;
+  }
+}
+
+.brands-img {
+  @media @medium {
+    margin: 30px 10px;
+  }
+}

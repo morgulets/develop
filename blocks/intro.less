@@ -1,0 +1,211 @@
+//main:..//css/style.less
+.intro-main {
+  position: relative;
+}
+
+.container-fluid-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.container-fluid-header.active-fixed .header {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.container-fluid-header.active-fixed .header #burger {
+  top: 12px;
+}
+
+.active-fixed {
+  background: url(..//img/intro/2.jpg) center no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.header {
+  padding-top: 40px;
+  position: relative;
+}
+
+.nav-main ul {
+  display: flex;
+  justify-content: flex-end;
+  @media @large {
+    display: none;
+  }
+}
+li {
+  list-style-type: none;
+  margin-left: 30px;
+  font-weight: 500;
+}
+.link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: @black;
+  transition: color 0.2s linear;
+  font-family: @mon;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    
+  }
+}
+.link-active{
+  color: @unic;
+}
+
+.active {
+  height: 470px;
+  width: 200px;
+  display: block;
+  position: absolute;
+  top: 110px;
+  left: -999px;
+  z-index: 1;
+  justify-content: center;
+  background-color: @black;
+  opacity: 80%;
+  transition: all 0.5s ease;
+}
+.active ul {
+  padding: 0px;
+  padding-left: 15px;
+}
+
+.active ul li {
+  margin: 0px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid @white;
+  &:hover {
+    border-bottom: 1px solid @unic;
+    cursor: pointer;
+  }
+  &:hover .link {
+    color: @unic;
+  }
+}
+
+.active ul li .link {
+  color: @white;
+  padding-bottom: 3px;
+
+  transition: all 0.2s linear;
+  &:hover {
+    color: @unic;
+  }
+}
+
+#burger {
+  width: 30px;
+  height: 30px;
+  color: @black;
+  position: absolute;
+  top: 26px;
+  right: 15px;
+  z-index: 1000;
+  font-size: 25px;
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  @media @large {
+    display: block;
+  }
+}
+
+.burger button {
+  border: 0px;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.img-logo {
+  @media @xs {
+    margin-left: 30px;
+  }
+}
+
+.intro {
+  height: 100vh;
+  background: url(..//img/intro/2.jpg) center no-repeat;
+
+  background-size: cover;
+}
+.gogo {
+  align-content: right;
+}
+
+.intro-content-main {
+  justify-content: flex-end;
+
+  @media @xl {
+    padding-top: 70px;
+    justify-content: center;
+  }
+}
+
+.intro__content {
+  padding-top: 225px;
+
+  @media @xl {
+    text-align: center;
+  }
+  @media @xs {
+    padding-top: 120px;
+  }
+}
+
+.main-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: @mon;
+
+  @media @xl {
+    text-align: center;
+  }
+}
+
+.main__content {
+  font-size: 1.6rem;
+  font-family: @mon;
+  line-height: 1.6;
+  color: @black;
+
+  @media @xl {
+    font-weight: 700;
+    font-size: 1.7rem;
+  }
+}
+
+.btn1 {
+  margin-top: 2.6rem;
+  width: 18rem;
+  height: 5.5rem;
+  border: none;
+  padding: 0;
+  color: @white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: @mon;
+  text-transform: uppercase;
+  background-color: @unic;
+  letter-spacing: 1.5px;
+  transition: background-color 0.2s linear;
+  border-radius: 4%;
+
+  &:hover {
+    background-color: #22a09c;
+  }
+}

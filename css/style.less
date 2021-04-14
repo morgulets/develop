@@ -1,0 +1,45 @@
+// compress: true
+
+@import "vars";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: @mon;
+  color: @black;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+@import "..//blocks/intro";
+@import "..//blocks/sections";
+@import "..//blocks/statics";
+@import "..//blocks/examples-work";
+@import "..//blocks/skills";
+@import "..//blocks/video";
+@import "..//blocks/services";
+@import "..//blocks/reviews";
+@import "..//blocks/brands";
+@import "..//blocks/order";
+@import "..//blocks/footer";

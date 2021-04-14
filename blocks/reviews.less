@@ -1,0 +1,101 @@
+//main:..//css/style.less
+
+.review {
+  background-color: @unic;
+  height: 500px;
+  max-width: 100%;
+
+  @media @xss {
+    height: 330px;
+  }
+}
+
+.slick-track {
+  display: flex;
+  &:focus {
+    outline: none;
+  }
+}
+.slick-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.slick-dots li{
+  list-style-type: none;
+  margin: 0 10px;
+}
+.slick-dots button{
+  margin-top: 70px;
+  margin-right: 10px;
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  color:#b9cccb;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  @media @medium {
+    margin-top: 40px;
+  }
+  @media @dots {
+    margin-top: 30px;
+    margin-right: 5px;
+  }
+}
+.slick-active button{
+  width: 13px;
+  height: 13px;
+  color: @white;
+}
+
+.review-item {
+  margin-top: 150px;
+  width: 840px;
+  &:focus {
+    outline: none;
+  }
+
+  @media @xl {
+    margin-top: 130px;
+  }
+  @media @medium {
+    margin-top: 100px;
+  }
+  @media @xss {
+    margin-top: 55px;
+  }
+}
+
+.review__content {
+  font-family: @mon;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: @white;
+  margin-bottom: 35px;
+  padding: 0 300px;
+  @media @xl {
+    padding: 0 150px;
+  }
+  @media @medium {
+    padding: 0 100px;
+  }
+  @media @xs {
+    font-size: 20px;
+  }
+  @media @xss {
+    font-size: 15px;
+    padding: 0 30px;
+  }
+}
+
+.review__name {
+  font-family: @mon;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: @white;
+  text-transform: uppercase;
+}

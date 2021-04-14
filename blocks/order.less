@@ -1,0 +1,89 @@
+//main:..//css/style.less
+.order {
+  min-height: 755px;
+  background-color: #f5f5f5;
+  padding: 100px 0;
+  padding-bottom: 20px;
+  @media @xss {
+    padding-top: 50px;
+  }
+}
+
+.form-order {
+  max-width: 675px;
+  margin: 0 auto;
+  font-size: 15px;
+  font-family: @nun;
+  color: #787878;
+  margin-bottom: 50px;
+}
+
+.name,
+.email {
+  padding-left: 20px;
+  width: 320px;
+  height: 50px;
+  margin-bottom: 30px;
+  border: none;
+  &:focus {
+    outline: 1px;
+    border: 1px solid #ccc;
+  }
+
+  @media @large2 {
+    width: 100%;
+  }
+  @media @medium {
+    width: 500px;
+  }
+  @media @xs {
+    width: 350px;
+  }
+  @media @xss {
+    width: 290px;
+  }
+}
+
+.title {
+  padding-left: 20px;
+  width: 665px;
+  height: 50px;
+  margin-bottom: 30px;
+  border: none;
+  &:focus {
+    outline: 1px;
+    border: 1px solid #ccc;
+  }
+
+  @media @medium {
+    width: 500px;
+  }
+  @media @xs {
+    width: 350px;
+  }
+  @media @xss {
+    width: 290px;
+  }
+}
+
+.textarea {
+  padding-top: 20px;
+  padding-left: 20px;
+  width: 670px;
+  height: 170px;
+  resize: none;
+  border: none;
+  &:focus {
+    outline: 1px;
+    border: 1px solid #ccc;
+  }
+  @media @medium {
+    width: 500px;
+  }
+  @media @xs {
+    width: 350px;
+  }
+  @media @xss {
+    width: 290px;
+  }
+}

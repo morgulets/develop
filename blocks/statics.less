@@ -1,0 +1,47 @@
+//main:..//css/style.less
+
+.statics {
+  background-color: @unic;
+}
+
+.stat__inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  @media @xl {
+    text-align: center;
+    justify-content: center;
+  }
+  @media @medium {
+    padding: 40px 0px;
+    display: block;
+  }
+  @media @xs {
+    padding: 35px 0px;
+  }
+}
+
+.stat__content {
+  margin-left: 2.5rem;
+
+  @media @medium {
+    margin: 0px;
+    margin-top: 17px;
+  }
+}
+
+.stat-num {
+  font-size: 1.8rem;
+  color: @white;
+  font-weight: 700;
+}
+
+.stat-condition {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: @white;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  font-family: @mon;
+}

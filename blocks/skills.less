@@ -1,0 +1,132 @@
+//main:..//css/style.less
+
+.left {
+  max-width: 50rem;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9f9;
+}
+
+.left__content {
+  width: 50rem;
+  margin: 20 auto;
+  text-align: start;
+
+  @media @xl {
+    margin: 40px 0px;
+  }
+  @media @xs {
+    max-width: 30rem;
+    padding: 0 20px;
+  }
+}
+
+.skills {
+  font-size: 30px;
+  font-family: @mon;
+  font-weight: 700;
+  letter-spacing: 1px;
+  @media @xs {
+    font-size: 20px;
+  }
+}
+
+.space {
+  color: transparent;
+}
+
+.right-img {
+  display: block;
+  width: 100%;
+
+  @media @xl {
+    display: none;
+  }
+}
+
+.nameOfskills1 {
+  position: relative;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: @mon;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 3px solid gray;
+  letter-spacing: 0.5px;
+
+  &:after {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 380px;
+    background: @unic;
+
+    @media @xs {
+      height: 2px;
+      width: 185px;
+    }
+  }
+}
+
+.nameOfskills2 {
+  position: relative;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: @mon;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 3px solid gray;
+  letter-spacing: 0.5px;
+
+  &:after {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 440px;
+    background: @unic;
+    @media @xl {
+      height: 2px;
+      width: 215px;
+    }
+  }
+}
+
+.nameOfskills3 {
+  position: relative;
+  margin-top: 35px;
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+  font-family: @mon;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-bottom: 3px solid gray;
+  letter-spacing: 0.5px;
+
+  &:after {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    content: "";
+    display: block;
+    height: 3px;
+    width: 330px;
+    background: @unic;
+    @media @xl {
+      width: 165px;
+    }
+  }
+}

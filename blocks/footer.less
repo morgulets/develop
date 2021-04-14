@@ -1,0 +1,148 @@
+//main:..//css/style.less
+.footer {
+  height: 285px;
+  background-color: #141414;
+  padding: 100px 0px;
+
+  @media @xl {
+    padding: 60px 0px;
+  }
+  @media @large {
+    height: 200px;
+  }
+  @media @medium {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    height: 200px;
+  }
+  @media @xs {
+    height: 400px;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  @media @xs {
+    display: block;
+  }
+}
+
+.producer {
+  width: 205px;
+  @media @large {
+    width: 260px;
+  }
+  @media @xs {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+.author {
+  font-size: 18px;
+  font-family: @mon;
+  font-weight: 700;
+  color: @white;
+  margin-bottom: 20px;
+  @media @medium {
+    font-size: 14px;
+  }
+}
+
+.rights,
+.phone__inner,
+.info__content {
+  font-family: @mon;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #a6a6a6;
+  @media @medium {
+    font-size: 12px;
+  }
+}
+
+.phone {
+  width: 150px;
+  margin-left: 140px;
+  @media @xl {
+    padding-top: 40px;
+    margin-left: 100px;
+  }
+  @media @large {
+    margin-left: 50px;
+  }
+  @media @medium {
+    margin-left: 0px;
+  }
+  @media @xs {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+}
+.phone__inner {
+  @media @xs {
+    text-align: center;
+  }
+}
+.info-main {
+  display: flex;
+  @media @large {
+    margin-left: 53px;
+  }
+  @media @medium {
+    margin-left: 10px;
+  }
+  @media @xs {
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 0px;
+  }
+}
+
+.info-1 {
+  margin-left: 40px;
+  @media @large {
+    margin-left: 15px;
+  }
+}
+
+.info-2 {
+  margin-left: 53px;
+  @media @large {
+    margin-left: 15px;
+  }
+}
+
+.info-3 {
+  margin-left: 100px;
+  @media @large {
+    margin-left: 15px;
+  }
+}
+.info-1 a,
+.info-2 a,
+.info-3 a {
+  display: block;
+  text-decoration: none;
+  color: #a6a6a6;
+  font-family: @mon;
+  font-size: 15px;
+
+  &:hover {
+    color: @white;
+  }
+
+  @media @medium {
+    font-size: 12px;
+  }
+}
+
+// линия под текстом для мобилок
+.hr {
+  display: none;
+
+  @media @xs {
+    display: block;
+  }
+}
